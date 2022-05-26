@@ -10,7 +10,7 @@ const theme = extendTheme({
       body: {
         fontFamily: "Darker Grotesque, sans-serif",
         color: "white",
-        backgroundColor: "secondary",
+        backgroundColor: "primary",
       },
       "&::-webkit-scrollbar": {
         width: "0.5em",

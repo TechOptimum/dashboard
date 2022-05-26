@@ -1,15 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-
-import { HStack, Heading, Spacer, Flex, Button } from "@chakra-ui/react";
-import { IconButton } from "@chakra-ui/button";
+import NavBar from "../comps/NavBar";
 
 export default function Home() {
   return (
     <>
-      <HStack>
-        <Heading></Heading>
-      </HStack>
+      <NavBar />
+      <h1>Welcome!</h1>
     </>
   );
 }

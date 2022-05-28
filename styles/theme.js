@@ -2,15 +2,18 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   colors: {
-    secondary: "#F9DBBD",
-    primary: "#0D0628",
+    secondary: "#A688EC",
+    primary: "#00153a",
   },
   styles: {
     global: () => ({
       body: {
-        fontFamily: "Darker Grotesque, sans-serif",
+        fontFamily:
+          "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
         color: "white",
         backgroundColor: "primary",
+        padding: 0,
+        margin: 0,
       },
       "&::-webkit-scrollbar": {
         width: "0.5em",

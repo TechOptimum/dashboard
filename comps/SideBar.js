@@ -4,7 +4,6 @@ import { AiOutlineForm } from "react-icons/ai";
 import { HiOutlineCode } from "react-icons/hi";
 import { FiLogOut } from "react-icons/fi";
 import { IconButton } from "@chakra-ui/button";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,7 +32,7 @@ function SideBar() {
           </Link>
           <Stack spacing="4">
             <Stack spacing="10">
-              <Link href="/workshop">
+              <Link href="/">
                 <Button
                   leftIcon={<FaHome />}
                   variant="ghost"
@@ -46,7 +45,8 @@ function SideBar() {
                   Home
                 </Button>
               </Link>
-              <Link href="/workshop">
+
+              <Link href="/workshops">
                 <Button
                   leftIcon={<FaWrench />}
                   variant="ghost"
@@ -59,7 +59,7 @@ function SideBar() {
                   Workshop
                 </Button>
               </Link>
-              <Link href="/workshop">
+              <Link href="/hackathons">
                 <Button
                   colorScheme="orange"
                   leftIcon={<HiOutlineCode />}
@@ -72,7 +72,7 @@ function SideBar() {
                   Hackathons
                 </Button>
               </Link>
-              <Link href="/workshop">
+              <Link href="/feedback">
                 <Button
                   colorScheme="orange"
                   leftIcon={<AiOutlineForm />}
@@ -88,7 +88,6 @@ function SideBar() {
             </Stack>
           </Stack>
         </Flex>
-        <Spacer />
         <IconButton
           w="0%"
           variant="ghost"

@@ -1,5 +1,6 @@
 html,
 body {
+  background-repeat: repeat;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -17,9 +18,19 @@ a {
 
 .bar {
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.27);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  border-radius: 1px;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.courses {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cardImage {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }

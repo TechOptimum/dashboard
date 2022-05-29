@@ -2,7 +2,7 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   colors: {
-    secondary: "#A688EC",
+    secondary: "#d6840c",
     primary: "#00153a",
   },
   styles: {
@@ -24,7 +24,7 @@ const theme = extendTheme({
         background: "transparent",
       },
       "&::-webkit-scrollbar-thumb": {
-        background: "primary",
+        background: "secondary",
         borderRadius: "50px",
       },
     }),

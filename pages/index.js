@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
-import NavBar from "../comps/NavBar";
+import SideBar from "/comps/SideBar";
 
 export default function Home() {
   return (
     <>
-      <NavBar />
-      <h1>Welcome!</h1>
+      <SideBar />
     </>
   );
 }

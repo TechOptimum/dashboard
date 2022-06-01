@@ -34,3 +34,41 @@ a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
+.welcome {
+  background: rgba(5, 0, 59, 0.439);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.599);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 0px solid rgba(255, 255, 255, 0.103);
+  display: flex;
+}
+
+.user {
+  line-height: 100px;
+}
+
+.gradient {
+  background-image: linear-gradient(45deg, #fea31c, #0e8eff);
+  background-clip: text;
+  color: transparent;
+}
+
+.userWelcome {
+  font-weight: bold;
+}
+
+.hackImage {
+  border-radius: 5px;
+  opacity: 0.55;
+}
+
+.hackathon_background {
+  background-color: black;
+}
+
+.hackDesc {
+  inline-size: 400px;
+  overflow-wrap: break-word;
+}

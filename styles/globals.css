@@ -61,7 +61,7 @@ a {
 
 .hackImage {
   border-radius: 5px;
-  opacity: 0.55;
+  opacity: 0.70;
 }
 
 .hackathon_background {
@@ -71,4 +71,8 @@ a {
 .hackDesc {
   inline-size: 400px;
   overflow-wrap: break-word;
+}
+
+.hackButton{
+  display: flex;
 }

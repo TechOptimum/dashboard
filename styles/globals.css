@@ -68,11 +68,12 @@ a {
   background-color: black;
 }
 
-.hackDesc {
+.Desc {
   inline-size: 400px;
   overflow-wrap: break-word;
 }
 
 .hackButton{
   display: flex;
+  
 }

@@ -6,16 +6,25 @@ import {
   Flex,
   Avatar,
   Badge,
+  Divider,
+  SimpleGrid,
+  IconButton,
 } from "@chakra-ui/react";
 import { MdPersonOutline } from "react-icons/md";
 import { VscSignIn } from "react-icons/vsc";
+import {
+  FaLinkedinIn,
+  FaInstagram,
+  FaTwitter,
+  FaDiscord,
+} from "react-icons/fa";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <Flex w="100%" justifyContent="center">
-        <VStack ml="200px" spacing="30px">
+        <VStack ml="200px" spacing="80px" mb="50px">
           <Box mt="100px" width="400px" height="100px" className="welcome">
             <Avatar
               size="lg"
@@ -43,7 +52,7 @@ export default function Home() {
             />
             <Text
               pos="absolute"
-              className="hackDesc"
+              className="Desc"
               fontSize="5xl"
               fontWeight="semibold"
               ml="20px"
@@ -79,7 +88,52 @@ export default function Home() {
               Register
             </Button>
           </Box>
-          <Box className="community"></Box>
+          <Box width="800px" height="200px" className="welcome desc">
+            {" "}
+            <Text
+              lineHeight="100px"
+              fontSize="5xl"
+              fontWeight="semibold"
+              ml="20px"
+              alignSelf="center"
+              mr="25px"
+            >
+              {" "}
+              Join our <span className="gradient">Commmunity</span>
+            </Text>
+            <Divider
+              className="divider"
+              alignSelf="center"
+              height="80px"
+              orientation="vertical"
+            />
+            <SimpleGrid column={2}>
+              <IconButton
+                icon={<FaLinkedinIn />}
+                rounded
+                variant="ghost"
+                colorScheme="orange"
+              />
+              <IconButton
+                icon={<FaInstagram />}
+                rounded
+                variant="ghost"
+                colorScheme="orange"
+              />
+              <IconButton
+                icon={<FaTwitter />}
+                rounded
+                variant="ghost"
+                colorScheme="orange"
+              />
+              <IconButton
+                icon={<FaDiscord />}
+                rounded
+                variant="ghost"
+                colorScheme="orange"
+              />
+            </SimpleGrid>
+          </Box>
         </VStack>
       </Flex>
     </>

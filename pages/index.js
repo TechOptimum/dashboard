@@ -1,5 +1,14 @@
-import { Button, Box, Text, VStack, Flex, Avatar, Badge } from "@chakra-ui/react";
+import {
+  Button,
+  Box,
+  Text,
+  VStack,
+  Flex,
+  Avatar,
+  Badge,
+} from "@chakra-ui/react";
 import { MdPersonOutline } from "react-icons/md";
+import { VscSignIn } from "react-icons/vsc";
 import Image from "next/image";
 
 export default function Home() {
@@ -41,13 +50,36 @@ export default function Home() {
             >
               Register for our <span className="gradient">Hackathon</span>
             </Text>
-            <Badge rounded="15px" ml="20px" mt="150px" position="absolute" variant="outline" colorScheme="orange">June whatever</Badge>
-            <Button position="absolute" ml="20px" mt="180px" colorScheme="orange" variant="solid" width="150px" height="50px" _hover={{
-              bg: "rgba(255, 255, 255, 0)",
-              border: "1px",
-              borderColor: "#fea31c",
-            }} color="">Register</Button>
+            <Badge
+              rounded="15px"
+              ml="20px"
+              mt="170px"
+              position="absolute"
+              variant="outline"
+              colorScheme="orange"
+            >
+              June 23-26
+            </Badge>
+            <Button
+              position="absolute"
+              ml="20px"
+              mt="200px"
+              colorScheme="orange"
+              variant="solid"
+              width="150px"
+              height="50px"
+              _hover={{
+                bg: "rgba(255, 255, 255, 0)",
+                border: "1px",
+                borderColor: "#fea31c",
+              }}
+              color="whiteAlpha"
+              rightIcon={<VscSignIn />}
+            >
+              Register
+            </Button>
           </Box>
+          <Box className="community"></Box>
         </VStack>
       </Flex>
     </>

@@ -7,8 +7,8 @@ import {
   Avatar,
   Badge,
   Divider,
-  SimpleGrid,
   IconButton,
+  Link,
 } from "@chakra-ui/react";
 import { MdPersonOutline } from "react-icons/md";
 import { VscSignIn } from "react-icons/vsc";
@@ -106,33 +106,71 @@ export default function Home() {
               alignSelf="center"
               height="80px"
               orientation="vertical"
+              mr="70px"
             />
-            <SimpleGrid column={2}>
-              <IconButton
-                icon={<FaLinkedinIn />}
-                rounded
-                variant="ghost"
-                colorScheme="orange"
-              />
-              <IconButton
-                icon={<FaInstagram />}
-                rounded
-                variant="ghost"
-                colorScheme="orange"
-              />
-              <IconButton
-                icon={<FaTwitter />}
-                rounded
-                variant="ghost"
-                colorScheme="orange"
-              />
-              <IconButton
-                icon={<FaDiscord />}
-                rounded
-                variant="ghost"
-                colorScheme="orange"
-              />
-            </SimpleGrid>
+            <Flex
+              flexDirection="column"
+              justifyContent="center"
+              flexWrap="wrap"
+            >
+              <Link href="http://www.linkedin.com" isExternal>
+                <IconButton
+                  icon={<FaLinkedinIn fontSize="35px" />}
+                  variant="link"
+                  colorScheme="orange"
+                  mb="10px"
+                  aria-label="Linkedin"
+                  _hover={{
+                    color: "#c0770a",
+                  }}
+                />
+              </Link>
+              <Link href="http://www.instagram.com" isExternal>
+                <IconButton
+                  icon={<FaInstagram fontSize="35px" />}
+                  variant="link"
+                  colorScheme="orange"
+                  mt="10px"
+                  aria-label="Instagram"
+                  _hover={{
+                    color: "#c0770a",
+                  }}
+                />
+              </Link>
+            </Flex>
+            <Flex
+              flexDir="column"
+              justifyContent="center"
+              flexWrap="wrap"
+              ml="15px"
+            >
+              <Link href="http:///www.twitter.com" isExternal>
+                <IconButton
+                  icon={<FaTwitter fontSize="35px" />}
+                  rounded
+                  variant="link"
+                  colorScheme="orange"
+                  mb="10px"
+                  aria-label="Twitter"
+                  _hover={{
+                    color: "#c0770a",
+                  }}
+                />
+              </Link>
+              <Link href="http://www.discord.com" isExternal>
+                <IconButton
+                  icon={<FaDiscord fontSize="35px" />}
+                  rounded
+                  variant="link"
+                  colorScheme="orange"
+                  mt="10px"
+                  aria-label="Discord"
+                  _hover={{
+                    color: "#c0770a",
+                  }}
+                />
+              </Link>
+            </Flex>
           </Box>
         </VStack>
       </Flex>

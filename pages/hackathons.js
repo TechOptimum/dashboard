@@ -17,10 +17,10 @@ function hackathons() {
             position="absolute"
             fontSize="8xl"
             fontWeight="semibold"
-            ml="80px"
+            ml="85px"
             mt="20px"
           >
-            P<span className="gradient">OO</span>P
+            <span className="gradient">Shh...</span>
           </Text>
         </Box>
       </Box>

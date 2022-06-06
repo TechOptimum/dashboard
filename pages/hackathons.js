@@ -6,11 +6,8 @@ function hackathons() {
     <Center ml="200px">
       <Box
         as="div"
-        width="400px"
-        height="200px"
-        bg="rgba(5, 0, 59, 0.5)"
-        position="relative"
-        mt="350px"
+        margin="auto"
+        
       >
         <Box>
           <Text
@@ -20,7 +17,7 @@ function hackathons() {
             ml="85px"
             mt="20px"
           >
-            <span className="gradient">Shh...</span>
+            <span className="gradient">July 8th - 10th, 2022</span>
           </Text>
         </Box>
       </Box>

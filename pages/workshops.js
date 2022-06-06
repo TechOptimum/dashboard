@@ -7,8 +7,7 @@ export default function workshops() {
     <>
       <Container maxW="100%" w="60%" className="courses">
         <CourseCard />
-          <CourseCard />
-          <CourseCard />
+     
       </Container>
     </>
   );

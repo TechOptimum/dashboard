@@ -19,10 +19,20 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 import Image from "next/image";
+import "../comps/Invite"
+
+
+discordInvite.init({
+  inviteCode: 'w7cymgdRBH',
+  title: 'Tech Optimum Community',
+});
+discordInvite.render();
+
 
 export default function Home() {
   return (
     <>
+    
       <Flex w="100%" justifyContent="center">
         <VStack ml="200px" spacing="80px" mb="50px">
           <Box mt="100px" width="400px" height="100px" className="welcome">

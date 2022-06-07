@@ -22,7 +22,7 @@ import TextareaAutosize from "react-textarea-autosize";
 function validateName(value) {
   let error;
   if (!value) {
-    error = "Name is required";
+    error = "Response is required";
   }
   return error;
 }
@@ -119,14 +119,10 @@ function Feedform() {
                 <Form>
                   <Field name="name" validate={validateName}>
                     {({ field, form }) => (
-                      <FormControl
-                        isInvalid={form.errors.name && form.touched.name}
-                        mx="20px"
-                        my="20px"
-                      >
+                      <FormControl mx="20px" my="20px">
                         <FormLabel htmlFor="name">
-                          What is one feature that you would like to see added
-                          to the dashboard?
+                          What is one feature that you would like to see
+                          added/removed/changed to the dashboard?
                         </FormLabel>
                         <Textarea
                           {...field}
@@ -136,7 +132,6 @@ function Feedform() {
                           as={TextareaAutosize}
                           width="650px"
                         />
-                        <FormErrorMessage>{form.errors.name}</FormErrorMessage>
                       </FormControl>
                     )}
                   </Field>
@@ -150,29 +145,42 @@ function Feedform() {
                 <Form>
                   <Field name="name" validate={validateName}>
                     {({ field, form }) => (
-                      <FormControl
-                        isInvalid={form.errors.name && form.touched.name}
-                        mx="20px"
-                        my="20px"
-                      >
+                      <FormControl>
                         <FormLabel htmlFor="name">
                           Where did you hear about Tech Optimum?
                         </FormLabel>
-                        <VStack spacing="5px" float="left">
-                          <Checkbox>
-                            Through the Tech Optimum's Website
-                          </Checkbox>
-                          <Checkbox>
-                            Through the Tech Optimum's Website
-                          </Checkbox>
-                          <Checkbox>
-                            Through the Tech Optimum's Website
-                          </Checkbox>
-                          <Checkbox>
-                            Through the Tech Optimum's Website
-                          </Checkbox>
-                        </VStack>
-                        <FormErrorMessage>{form.errors.name}</FormErrorMessage>
+                        <Flex justifyContent="start">
+                          <VStack alignItems="baseline">
+                            <Checkbox colorScheme="orange">
+                              Through the Tech Optimum's Website
+                            </Checkbox>
+                            <Checkbox colorScheme="orange" mb="5px">
+                              Through Social Media
+                            </Checkbox>
+                            <Textarea
+                              resize="none"
+                              placeholder="Specify here"
+                              minH="fit-content"
+                              width="200px"
+                              size="md"
+                              borderTop="none"
+                              borderX="none"
+                              borderRadius="0px"
+                            />
+                            <Checkbox colorScheme="orange">Friends</Checkbox>
+                            <Checkbox colorScheme="orange">Other</Checkbox>
+                            <Textarea
+                              resize="none"
+                              placeholder="Specify here"
+                              minH="fit-content"
+                              width="200px"
+                              size="md"
+                              borderTop="none"
+                              borderX="none"
+                              borderRadius="0px"
+                            />
+                          </VStack>
+                        </Flex>
                       </FormControl>
                     )}
                   </Field>

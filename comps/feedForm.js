@@ -145,7 +145,7 @@ function Feedform() {
                 <Form>
                   <Field name="name" validate={validateName}>
                     {({ field, form }) => (
-                      <FormControl>
+                      <FormControl mx="20px" my="20px">
                         <FormLabel htmlFor="name">
                           Where did you hear about Tech Optimum?
                         </FormLabel>

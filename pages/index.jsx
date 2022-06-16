@@ -1,9 +1,7 @@
-import Hero from "../comps/hero";
+import React from "react";
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-    </>
-  );
+function Home() {
+  return <div>Home</div>;
 }
+
+export default Home;

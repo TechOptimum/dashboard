@@ -1,10 +1,11 @@
-import Feedform from "../comps/feedForm";
+import Hero from "../comps/hero";
 import Layout from "../comps/layout";
-export default function feedback() {
+
+export default function Home() {
   return (
     <>
       <Layout>
-        <Feedform />
+        <Hero />
       </Layout>
     </>
   );

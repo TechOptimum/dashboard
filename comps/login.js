@@ -1,16 +1,28 @@
-import React from "react";
+import { Formik, Field, Form } from "formik";
 import {
   Box,
-  VStack,
+  Button,
+  Checkbox,
   Flex,
-  Text,
-  Textarea,
   FormControl,
   FormLabel,
   FormErrorMessage,
+  VStack,
+  Text,
+  Textarea,
 } from "@chakra-ui/react";
+import React from "react";
+import TextareaAutosize from "react-textarea-autosize";
 
-function login() {
+function validateName(value) {
+  let error;
+  if (!value) {
+    error = "Response is required";
+  }
+  return error;
+}
+
+function Login() {
   return (
     <Box className="formBox" width="700px">
       <VStack>
@@ -48,4 +60,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;

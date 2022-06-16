@@ -1,7 +1,13 @@
 import React from "react";
+import Layout from "../comps/layout";
+import { Center } from "@chakra-ui/react";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <Layout>
+      <Center>Home</Center>
+    </Layout>
+  );
 }
 
 export default Home;

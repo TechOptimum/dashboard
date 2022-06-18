@@ -5,11 +5,7 @@ import Login from "../comps/login";
 import Hero from "../comps/hero";
 
 function Home() {
-  return (
-    <Layout>
-      <Hero />
-    </Layout>
-  );
+  return <Login />;
 }
 
 export default Home;

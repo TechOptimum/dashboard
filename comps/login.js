@@ -2,17 +2,17 @@ import { Formik, Field, Form } from "formik";
 import {
   Box,
   Button,
-  Checkbox,
   Flex,
   FormControl,
   FormLabel,
   FormErrorMessage,
-  VStack,
   Text,
   Textarea,
+  IconButton,
+  Tooltip,
 } from "@chakra-ui/react";
 import React from "react";
-import TextareaAutosize from "react-textarea-autosize";
+import { FaGoogle, FaGithub, FaDiscord, FaGit } from "react-icons/fa";
 
 function validateEmail(value) {
   let error;
@@ -118,9 +118,40 @@ function Login() {
           >
             Login
           </Button>
-          <Text className="gradient" mt="90px">
+          <Text className="gradient" mt="60px" position="absolute">
             Other Options:
           </Text>
+          <Tooltip
+            hasArrow
+            label="Login with Github"
+            mr="25px"
+            bg="gray.800"
+            mt="2px"
+          >
+            <IconButton
+              icon={<FaGithub fontSize="35px" />}
+              variant="link"
+              colorScheme="orange"
+              aria-label="Github"
+              _hover={{
+                color: "#c0770a",
+              }}
+              pt="120px"
+              pr="25px"
+            />
+          </Tooltip>
+          <Tooltip hasArrow label="Login with Discord" bg="gray.800">
+            <IconButton
+              icon={<FaDiscord fontSize="35px" />}
+              variant="link"
+              colorScheme="orange"
+              aria-label="Github"
+              _hover={{
+                color: "#c0770a",
+              }}
+              pt="120px"
+            />
+          </Tooltip>
         </Flex>
       </Box>
     </Flex>

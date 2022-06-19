@@ -32,13 +32,13 @@ function validatePassword(value) {
 
 function Login() {
   return (
-    <Flex justifyContent="center" alignItems="center" height="900px">
+    <Flex justifyContent="center" alignItems="center" height="950px">
       <Box
         className="formBox"
         maxW="100%"
         justifyItems="center"
         width="400px"
-        height="500px"
+        height="600px"
       >
         <Text fontSize="xl" align="center" my="20px" mb="45px">
           Welcome to{" "}
@@ -121,13 +121,7 @@ function Login() {
           <Text className="gradient" mt="60px" position="absolute">
             Other Options:
           </Text>
-          <Tooltip
-            hasArrow
-            label="Login with Github"
-            mr="25px"
-            bg="gray.800"
-            mt="2px"
-          >
+          <Tooltip hasArrow label="Login with Github" bg="gray.800" mt="4px">
             <IconButton
               icon={<FaGithub fontSize="35px" />}
               variant="link"
@@ -136,11 +130,11 @@ function Login() {
               _hover={{
                 color: "#c0770a",
               }}
-              pt="120px"
-              pr="25px"
+              mt="120px"
+              mr="25px"
             />
           </Tooltip>
-          <Tooltip hasArrow label="Login with Discord" bg="gray.800">
+          <Tooltip hasArrow label="Login with Discord" bg="gray.800" mt="4px">
             <IconButton
               icon={<FaDiscord fontSize="35px" />}
               variant="link"
@@ -149,7 +143,7 @@ function Login() {
               _hover={{
                 color: "#c0770a",
               }}
-              pt="120px"
+              mt="120px"
             />
           </Tooltip>
         </Flex>

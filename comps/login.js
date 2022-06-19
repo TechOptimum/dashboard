@@ -46,56 +46,82 @@ function Login() {
             Tech Optimum
           </span>
         </Text>
-        <Box maxWidth="100%" width mb="30px">
-          <Formik initialValues={{ name: "" }} className="loginForm">
-            {(props) => (
-              <Form>
-                <Field name="name" validate={validateEmail}>
-                  {({ field, form }) => (
-                    <FormControl
-                      isInvalid={form.errors.name && form.touched.name}
-                      isRequired
-                    >
-                      <FormLabel htmlFor="name">Email or Username</FormLabel>
-                      <Textarea
-                        {...field}
-                        minH="fit-content"
-                        placeholder="JohnDoe@outlook.com"
-                        resize="none"
-                      />
-                      <FormErrorMessage>{form.errors.name}</FormErrorMessage>
-                    </FormControl>
-                  )}
-                </Field>
-              </Form>
-            )}
-          </Formik>
+        {/* -------------------------------------------------------------------------------------------------------------------------------- */}
+        <Box maxWidth="100%" mb="30px" className="loginUtil" mx="30px">
+          <Box>
+            <Formik initialValues={{ name: "" }} className="loginForm">
+              {(props) => (
+                <Form>
+                  <Field name="name" validate={validateEmail}>
+                    {({ field, form }) => (
+                      <FormControl
+                        isInvalid={form.errors.name && form.touched.name}
+                      >
+                        <FormLabel htmlFor="name">Email or Username</FormLabel>
+                        <Textarea
+                          {...field}
+                          minH="fit-content"
+                          placeholder="JohnDoe@outlook.com"
+                          resize="none"
+                        />
+                        <FormErrorMessage>{form.errors.name}</FormErrorMessage>
+                      </FormControl>
+                    )}
+                  </Field>
+                </Form>
+              )}
+            </Formik>
+          </Box>
+          <Box mt="1.3rem">
+            <Formik initialValues={{ name: "" }} className="loginForm">
+              {(props) => (
+                <Form>
+                  <Field name="name" validate={validatePassword}>
+                    {({ field, form }) => (
+                      <FormControl
+                        isInvalid={form.errors.name && form.touched.name}
+                      >
+                        <FormLabel htmlFor="name" maxW="100%">
+                          Password
+                        </FormLabel>
+                        <Textarea
+                          {...field}
+                          minH="fit-content"
+                          placeholder=""
+                          resize="none"
+                        />
+                        <FormErrorMessage>{form.errors.name}</FormErrorMessage>
+                      </FormControl>
+                    )}
+                  </Field>
+                </Form>
+              )}
+            </Formik>
+          </Box>
         </Box>
-        <Formik initialValues={{ name: "" }} className="loginForm">
-          {(props) => (
-            <Form>
-              <Field name="name" validate={validatePassword}>
-                {({ field, form }) => (
-                  <FormControl
-                    isInvalid={form.errors.name && form.touched.name}
-                    isRequired
-                  >
-                    <FormLabel htmlFor="name" maxW="100%">
-                      Password
-                    </FormLabel>
-                    <Textarea
-                      {...field}
-                      minH="fit-content"
-                      placeholder=""
-                      resize="none"
-                    />
-                    <FormErrorMessage>{form.errors.name}</FormErrorMessage>
-                  </FormControl>
-                )}
-              </Field>
-            </Form>
-          )}
-        </Formik>
+        {/* ------------------------------------------------------------------------------------------------------------------------------ */}
+        <Flex justifyContent="center">
+          <Button
+            position="absolute"
+            colorScheme="orange"
+            variant="solid"
+            width="300px"
+            height="40px"
+            mt="0px"
+            _hover={{
+              bg: "rgba(255, 255, 255, 0)",
+              border: "1px",
+              borderColor: "#fea31c",
+              transform: "scale(1.05, 1.05)",
+            }}
+            color="whiteAlpha"
+          >
+            Login
+          </Button>
+          <Text className="gradient" mt="90px">
+            Other Options:
+          </Text>
+        </Flex>
       </Box>
     </Flex>
   );

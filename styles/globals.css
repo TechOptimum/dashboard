@@ -89,3 +89,8 @@ a {
   font-weight: bold;
   font-size: larger;
 }
+
+.loginUtil {
+  display: flex;
+  flex-direction: column;
+}

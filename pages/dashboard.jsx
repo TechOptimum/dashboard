@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import Hero from "../comps/hero";
 import Layout from "../comps/layout";
+import AuthContext from "../store/AuthContext";
 
 export default function Home() {
-  return (
+  const authCtx = useContext(AuthContext);
+  return authCtx.isLoggedIn && (
     <>
       <Layout>
         <Hero />

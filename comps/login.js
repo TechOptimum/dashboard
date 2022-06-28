@@ -96,6 +96,7 @@ function Login() {
                 minH="fit-content"
                 placeholder="JohnDoe@outlook.com"
                 resize="none"
+                type="email"
               />
               <div>
                 {errors.email?.type === "required" && (
@@ -115,6 +116,7 @@ function Login() {
                 minH="fit-content"
                 placeholder=""
                 resize="none"
+                type="password"
               />
               <div>
                 {errors.password?.type === "required" && (

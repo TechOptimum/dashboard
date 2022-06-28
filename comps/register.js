@@ -131,6 +131,7 @@ function Register() {
                 placeholder="johndoe@outlook.com"
                 resize="none"
                 id="email"
+                type="email"
               />
               <div>
                 {errors.email?.type === "required" && (
@@ -151,6 +152,7 @@ function Register() {
                 placeholder=""
                 resize="none"
                 id="password"
+                type="password"
               />
               <div>
                 {errors.password?.type === "required" && (
@@ -176,6 +178,7 @@ function Register() {
                 placeholder=""
                 resize="none"
                 id="confirmpassword"
+                type="password"
               />
               <div>
                 {errors.cpassword?.type === "required" && (

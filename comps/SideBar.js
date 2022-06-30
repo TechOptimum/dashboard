@@ -54,7 +54,7 @@ function SideBar() {
           </Link>
           <Stack spacing="4">
             <Stack spacing="10">
-              <Link href="/">
+              <Link href="/dashboard">
                 <Button
                   leftIcon={<FaHome />}
                   variant="ghost"

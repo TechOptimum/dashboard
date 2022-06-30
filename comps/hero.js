@@ -19,8 +19,11 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 import Image from "next/image";
+import { useContext } from "react";
+import AuthContext from '../store/AuthContext';
 
 export default function Hero() {
+  const authCtx = useContext(AuthContext);
   return (
     <>
       <Flex w="100%" justifyContent="center">
@@ -35,7 +38,7 @@ export default function Hero() {
             />
             <Text className="user" fontSize="3xl" ml="40px">
               {" "}
-              <span className="gradient userWelcome">Welcome</span> USER
+              <span className="gradient userWelcome">Welcome</span> {authCtx.username}
             </Text>
           </Box>
           <Box

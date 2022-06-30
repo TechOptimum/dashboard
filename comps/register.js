@@ -88,7 +88,7 @@ function Register() {
         maxW="100%"
         justifyItems="center"
         width="400px"
-        height="750px"
+        height="800px"
       >
         <Text fontSize="xl" align="center" my="20px" mb="25px">
           Welcome to{" "}
@@ -98,7 +98,10 @@ function Register() {
           &nbsp;please sign up to continue.
         </Text>
         <Text mt="10px" align="center">
-          Already have an account? <Link href="/">Sign In!</Link>
+          Already have an account?{" "}
+          <span className="gradient">
+            <Link href="/">Sign In! </Link>
+          </span>
         </Text>
         {err && (
           <Text mt="60px" align="center">

@@ -16,7 +16,7 @@ import React, { useContext, useState } from "react";
 import { FaGoogle, FaGithub, FaDiscord, FaGit } from "react-icons/fa";
 import AuthContext from "../store/AuthContext";
 import { useRouter } from "next/router";
-import Link  from 'next/link';
+import Link from "next/link";
 
 function Register() {
   const [err, setErr] = useState(null);
@@ -88,17 +88,20 @@ function Register() {
         maxW="100%"
         justifyItems="center"
         width="400px"
-        height="600px"
+        height="800px"
       >
-        <Text fontSize="xl" align="center" my="20px" mb="45px">
+        <Text fontSize="xl" align="center" my="20px" mb="25px">
           Welcome to{" "}
           <span className="gradient org" fontWeight="semibold" fontSize="3xl">
             Tech Optimum
           </span>
           &nbsp;please sign up to continue.
         </Text>
-        <Text mt="60px" align="center">
-          Already have an account? <Link href="/">Sign In!</Link>
+        <Text mt="10px" align="center">
+          Already have an account?{" "}
+          <span className="gradient">
+            <Link href="/">Sign In! </Link>
+          </span>
         </Text>
         {err && (
           <Text mt="60px" align="center">

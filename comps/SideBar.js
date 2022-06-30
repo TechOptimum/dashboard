@@ -6,8 +6,30 @@ import { FiLogOut } from "react-icons/fi";
 import { IconButton } from "@chakra-ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useContext } from "react";
+import AuthContext from "../store/AuthContext";
 
 function SideBar() {
+  const authCtx = useContext(AuthContext);
+  const router = useRouter();
+  const logoutHandler = (e) => {
+    e.preventDefault();
+    fetch("http://localhost:3000/auth/logout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          authCtx.logout();
+          router.push("/");
+        }
+      });
+  };
+
   return (
     <>
       <Flex
@@ -89,6 +111,7 @@ function SideBar() {
           </Stack>
         </Flex>
         <IconButton
+          onClick={logoutHandler}
           w="0%"
           variant="ghost"
           aria-label="Logout"

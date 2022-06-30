@@ -2,7 +2,11 @@ import React from "react";
 import Login from "../comps/login";
 
 function Home() {
-  return <Login />;
+  return (
+    <>
+      <Login />
+    </>
+  );
 }
 
 export default Home;

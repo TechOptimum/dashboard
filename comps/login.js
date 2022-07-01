@@ -94,7 +94,7 @@ function Login() {
               <Input
                 {...register("email", { required: true })}
                 minH="fit-content"
-                placeholder="JohnDoe@outlook.com"
+                placeholder="Johndoe@outlook.com"
                 resize="none"
                 type="email"
               />
@@ -155,6 +155,9 @@ function Login() {
           </Flex>
         </form>
         <Flex justifyContent="center">
+          <Text position="absolute">
+            <Link href="/verify/forgot-password">Forgot password?</Link>
+          </Text>
           <Text className="gradient" mt="60px" position="absolute">
             Other Options:
           </Text>

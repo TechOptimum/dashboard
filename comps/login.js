@@ -94,7 +94,7 @@ function Login() {
               <Input
                 {...register("email", { required: true })}
                 minH="fit-content"
-                placeholder="JohnDoe@outlook.com"
+                placeholder="Johndoe@outlook.com"
                 resize="none"
                 type="email"
               />

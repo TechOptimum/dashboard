@@ -28,6 +28,17 @@ function forgotPassword() {
       .then((data) => {
         if (data.success) {
           setSuccess(true);
+        } else {
+          setSuccess(false);
+          if (data.code === "emalnex") {
+            setError(
+              "email",
+              { type: "emalnex" },
+              {
+                shouldFocus: true,
+              }
+            );
+          }
         }
       });
   };
@@ -40,7 +51,7 @@ function forgotPassword() {
             <Input
               {...register("email", { required: true })}
               minH="fit-content"
-              placeholder="johnDoe@outlook.com"
+              placeholder="johndoe@outlook.com"
               resize="none"
               type="email"
             />
@@ -48,32 +59,32 @@ function forgotPassword() {
               {errors.email?.type === "required" && (
                 <p style={{ color: "red" }}>Email is required.</p>
               )}
-              {errors.email?.type === "lgnfail" && (
-                <p style={{ color: "red" }}>Invalid email or password.</p>
+              {errors.email?.type === "emalnex" && (
+                <p style={{ color: "red" }}>Invalid email.</p>
               )}
             </div>
           </Box>
         </Box>
         <Flex justifyContent="center">
-            <Button
-              position="absolute"
-              colorScheme="orange"
-              variant="solid"
-              width="300px"
-              height="40px"
-              mt="0px"
-              _hover={{
-                bg: "rgba(255, 255, 255, 0)",
-                border: "1px",
-                borderColor: "#fea31c",
-                transform: "scale(1.05, 1.05)",
-              }}
-              type="submit"
-              color="whiteAlpha"
-            >
-              Submit
-            </Button>
-          </Flex>
+          <Button
+            position="absolute"
+            colorScheme="orange"
+            variant="solid"
+            width="300px"
+            height="40px"
+            mt="0px"
+            _hover={{
+              bg: "rgba(255, 255, 255, 0)",
+              border: "1px",
+              borderColor: "#fea31c",
+              transform: "scale(1.05, 1.05)",
+            }}
+            type="submit"
+            color="whiteAlpha"
+          >
+            Submit
+          </Button>
+        </Flex>
       </form>
     </div>
   ) : (

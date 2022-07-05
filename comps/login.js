@@ -70,7 +70,7 @@ function Login() {
         maxW="100%"
         justifyItems="center"
         width="400px"
-        height="600px"
+        height="650px"
       >
         <Text fontSize="xl" align="center" my="20px" mb="45px">
           Welcome to{" "}
@@ -78,8 +78,11 @@ function Login() {
             Tech Optimum
           </span>
         </Text>
-        <Text mt="60px" align="center">
-          Don't have an account? <Link href="/register">Sign Up!</Link>
+        <Text mb="10px" align="center">
+          Don't have an account?{" "}
+          <span className="gradient">
+            <Link href="/register">Sign Up!</Link>
+          </span>
         </Text>
         {err && (
           <Text mt="60px" align="center">
@@ -141,6 +144,7 @@ function Login() {
               width="300px"
               height="40px"
               mt="0px"
+              transition="all 0.3s ease-in-out"
               _hover={{
                 bg: "rgba(255, 255, 255, 0)",
                 border: "1px",
@@ -154,8 +158,13 @@ function Login() {
             </Button>
           </Flex>
         </form>
-        <Flex justifyContent="center">
-          <Text position="absolute">
+        <Flex justifyContent="center" mt="60px">
+          <Text
+            transition="all 0.2s ease-in-out"
+            position="absolute"
+            _hover={{ color: "#fea31c" }}
+            fontWeight="semibold"
+          >
             <Link href="/verify/forgot-password">Forgot password?</Link>
           </Text>
           <Text className="gradient" mt="60px" position="absolute">

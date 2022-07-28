@@ -99,7 +99,7 @@ function Register() {
         </Text>
         <Text mt="10px" align="center">
           Already have an account?{" "}
-          <span className="gradient">
+          <span className="gradient gradient-hover">
             <Link href="/">Sign In! </Link>
           </span>
         </Text>

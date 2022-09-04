@@ -36,6 +36,7 @@ function createcourse() {
   const submitHandler = () => {
     const courseTitle = getValues("title");
     const courseDescription = getValues("desc");
+    const courseLanguage = getValues("language");
     const courseParts = partValues;
     fetch("http://localhost:3000/course/new-course", {
       method: "POST",
@@ -47,6 +48,7 @@ function createcourse() {
         courseTitle,
         courseDescription,
         courseParts,
+        courseLanguage,
       }),
     })
       .then((res) => res.json())
@@ -72,6 +74,13 @@ function createcourse() {
         <input
           placeholder="Course Description"
           {...register("desc", { required: true })}
+          style={{
+            color: "black",
+          }}
+        />
+        <input
+          placeholder="Course Language"
+          {...register("language", { required: true })}
           style={{
             color: "black",
           }}

@@ -65,7 +65,7 @@ function Register() {
       .then((data) => {
         if (data.success) {
           const expirationTime = new Date(new Date().getTime() + 3600 * 1000);
-          authCtx.login(null, expirationTime, data.username);
+          authCtx.login(data.token, expirationTime, data.username);
           router.push("/dashboard");
         } else {
           if (data.errType === "dberr") {

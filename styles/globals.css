@@ -53,8 +53,14 @@ a {
   filter: brightness(140%);
   background-clip: text;
   color: transparent;
+  transition: 400ms;
+  transition-duration: 400ms;
 }
-
+.gradient-hover:hover {
+  transition: 400ms;
+  transition-duration: 400ms;
+  color: #fea31c;
+}
 .userWelcome {
   font-weight: bold;
 }

@@ -80,7 +80,7 @@ function Login() {
         </Text>
         <Text mb="10px" align="center">
           Don't have an account?{" "}
-          <span className="gradient">
+          <span className="gradient gradient-hover">
             <Link href="/register">Sign Up!</Link>
           </span>
         </Text>
@@ -165,6 +165,7 @@ function Login() {
             _hover={{ color: "#fea31c" }}
             fontWeight="semibold"
           >
+            <br></br>
             <Link href="/verify/forgot-password">Forgot password?</Link>
           </Text>
           <Text className="gradient" mt="60px" position="absolute">

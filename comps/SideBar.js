@@ -44,10 +44,11 @@ function SideBar() {
           <Link href="/">
             <Box mb="6">
               <Image
-                width="200px"
+                width={"200px"}
                 height="70px"
-                src="/logo.png"
-                priority
+              
+                src="/text-lblue-transparent.png"
+              
                 className=".logo"
               />
             </Box>
@@ -62,7 +63,7 @@ function SideBar() {
                     bg: "rgba( 245, 166, 35, 0.10 )",
                   }}
                   height="55px"
-                  colorScheme="orange"
+                 color="#A7B2FF"
                 >
                   Home
                 </Button>
@@ -76,14 +77,14 @@ function SideBar() {
                     bg: "rgba( 245, 166, 35, 0.10 )",
                   }}
                   height="55px"
-                  colorScheme="orange"
+                  color="#A7B2FF"
                 >
                   Workshop
                 </Button>
               </Link>
               <Link href="/hackathons">
                 <Button
-                  colorScheme="orange"
+                  color="#A7B2FF"
                   leftIcon={<HiOutlineCode />}
                   variant="ghost"
                   _hover={{
@@ -96,7 +97,7 @@ function SideBar() {
               </Link>
               <Link href="/feedback">
                 <Button
-                  colorScheme="orange"
+                   color="#A7B2FF"
                   leftIcon={<AiOutlineForm />}
                   variant="ghost"
                   _hover={{

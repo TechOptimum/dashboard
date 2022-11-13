@@ -4,7 +4,6 @@ const theme = extendTheme({
   colors: {
     secondary: "#d6840c",
     primary: "#00153a",
-    tertiary:"#05101D",
   },
   styles: {
     global: () => ({
@@ -12,7 +11,7 @@ const theme = extendTheme({
         fontFamily:
           "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
         color: "white",
-        backgroundColor: "tertiary",
+        backgroundColor: "primary",
         padding: 0,
         margin: 0,
       },

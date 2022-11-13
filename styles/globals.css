@@ -86,10 +86,10 @@ a {
 .formBox {
   background-color: rgba(5, 0, 59, 0.439);
   border-radius: 10px;
-
+  box-shadow: 0 1px 10px 0 rgba(15, 13, 116, 0.599);
 }
 
-styles/globals.css/* QWMDIOQMDIOQIOWDQMDOIQMWDIQDWQWDMQ */
+/* QWMDIOQMDIOQIOWDQMDOIQMWDIQDWQWDMQ */
 
 .org {
   font-weight: bold;

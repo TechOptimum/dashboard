@@ -11,7 +11,6 @@ import {
   IconButton,
   Tooltip,
   Input,
-  
 } from "@chakra-ui/react";
 import React, { useContext, useState } from "react";
 import { FaGoogle, FaGithub, FaDiscord, FaGit } from "react-icons/fa";
@@ -98,7 +97,7 @@ function Login() {
               <Input
                 {...register("email", { required: true })}
                 minH="fit-content"
-                placeholder="johndoe@outlook.com"
+                placeholder="Johndoe@outlook.com"
                 resize="none"
                 type="email"
               />
@@ -113,7 +112,6 @@ function Login() {
             </Box>
             <Box mt="1.3rem">
               <FormLabel htmlFor="name" maxW="100%">
-                
                 Password
               </FormLabel>
               <Input
@@ -171,11 +169,10 @@ function Login() {
             <Link href="/verify/forgot-password">Forgot password?</Link>
           </Text>
           <Text className="gradient" mt="60px" position="absolute">
-            Other Options: (Coming Soon)
+            Other Options:
           </Text>
           <Tooltip hasArrow label="Login with Github" bg="gray.800" mt="4px">
             <IconButton
-            isDisabled={isDisabled}
               icon={<FaGithub fontSize="35px" />}
               variant="link"
               colorScheme="orange"
@@ -183,7 +180,7 @@ function Login() {
               _hover={{
                 color: "#c0770a",
               }}
-              mt="100px"
+              mt="120px"
               mr="25px"
             />
           </Tooltip>
@@ -196,7 +193,7 @@ function Login() {
               _hover={{
                 color: "#c0770a",
               }}
-              mt="100px"
+              mt="120px"
             />
           </Tooltip>
         </Flex>

@@ -5,17 +5,19 @@ const theme = extendTheme({
     secondary: "#d6840c",
     primary: "#00153a",
   },
+  fonts: {
+    body: "'Neue Machina', sans-serif",
+    heading: "'Neue Machina', sans-serif",
+  },
   styles: {
     global: () => ({
       body: {
-        fontFamily:
-          "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+        fontFamily: "Neue Machina",
         color: "white",
-        backgroundColor: "primary",
+        backgroundColor: "bgColor",
         padding: 0,
         margin: 0,
       },
-
       "&::-webkit-scrollbar": {
         width: "0.5em",
       },
@@ -30,5 +32,6 @@ const theme = extendTheme({
     }),
   },
 });
+
 
 export default theme;

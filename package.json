@@ -11,7 +11,7 @@
   "dependencies": {
     "@chakra-ui/button": "^2.0.13",
     "@chakra-ui/icons": "^2.0.15",
-    "@chakra-ui/react": "^2.4.6",
+    "@chakra-ui/react": "^2.5.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "animate.css": "^4.1.1",
